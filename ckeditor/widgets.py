@@ -68,7 +68,7 @@ class CKEditorWidget(forms.Textarea):
                         static('ckeditor/ckeditor/'),
                     ),
                 }),
-                static('ckeditor/ckeditor/ckeditor.js'),
+                JS('ckeditor/ckeditor/ckeditor.js', None),
             )
         except AttributeError:
             raise ImproperlyConfigured("django-ckeditor requires \
